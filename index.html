@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,215 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- JSON-LD structured data. TODO: add price/availability only when confirmed product data is available on the page. -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "OnlineStore",
+                "@id": "https://xn--40k-buchw-d7a.pl/#organization",
+                "name": "40k-buchow.pl",
+                "url": "https://xn--40k-buchw-d7a.pl/",
+                "logo": "https://xn--40k-buchw-d7a.pl/images/logo.png",
+                "email": "info@dbucha.com",
+                "telephone": "+48 573 581 194",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "email": "info@dbucha.com",
+                    "telephone": "+48 573 581 194",
+                    "availableLanguage": ["pl"]
+                },
+                "sameAs": [
+                    "https://www.instagram.com/dbucha.com_sklep/",
+                    "https://www.facebook.com/profile.php?id=61578129732195",
+                    "https://www.tiktok.com/@dbucha.com"
+                ],
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Polska"
+                },
+                "availableLanguage": ["pl"]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://xn--40k-buchw-d7a.pl/#website",
+                "name": "40k-buchow.pl",
+                "url": "https://xn--40k-buchw-d7a.pl/",
+                "publisher": {
+                    "@id": "https://xn--40k-buchw-d7a.pl/#organization"
+                },
+                "inLanguage": "pl"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://xn--40k-buchw-d7a.pl/#webpage",
+                "url": "https://xn--40k-buchw-d7a.pl/",
+                "name": "40k-buchow.pl - jednorazowki w Polsce",
+                "description": "Informacyjna i porownawcza strona o produktach typu jednorazowka oraz e papieros jednorazowy 40K.",
+                "isPartOf": {
+                    "@id": "https://xn--40k-buchw-d7a.pl/#website"
+                },
+                "about": {
+                    "@id": "https://xn--40k-buchw-d7a.pl/#organization"
+                },
+                "inLanguage": "pl"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://xn--40k-buchw-d7a.pl/#breadcrumbs",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Strona glowna",
+                        "item": "https://xn--40k-buchw-d7a.pl/"
+                    }
+                ]
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": "https://xn--40k-buchw-d7a.pl/#collection",
+                "name": "Jednorazowki 40K",
+                "description": "Lista produktow typu e papieros jednorazowy prezentowanych na stronie 40k-buchow.pl.",
+                "url": "https://xn--40k-buchw-d7a.pl/",
+                "mainEntity": {
+                    "@id": "https://xn--40k-buchw-d7a.pl/#itemlist"
+                },
+                "inLanguage": "pl"
+            },
+            {
+                "@type": "ItemList",
+                "@id": "https://xn--40k-buchw-d7a.pl/#itemlist",
+                "name": "Popularne jednorazowki 40K",
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "numberOfItems": 7,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow#product",
+                            "name": "E papieros jednorazowy MerryMi Panda X 40K 5%",
+                            "url": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-x-40k-buchow",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/MerryMi-Panda-X-40K.png",
+                            "description": "Jednorazowka MerryMi Panda X 40K 5% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "MerryMi"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/jnr-leopard-40k-buchow#product",
+                            "name": "E papieros jednorazowy JNR Leopard 40K 2%",
+                            "url": "https://www.dbucha.com/products/jnr-leopard-40k-buchow",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/Jnr-Leopard-40k-jednorazowki.png",
+                            "description": "Jednorazowka JNR Leopard 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "JNR"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/adalya-aurora-40k-buchow#product",
+                            "name": "E papieros jednorazowy Adalya Aura 40K 2%",
+                            "url": "https://www.dbucha.com/collections/adalya",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/Adalya-Aura-40k-jednorazowki.png",
+                            "description": "Jednorazowka Adalya Aura 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "Adalya"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/fumot-digital-monkey-40k-buchow#product",
+                            "name": "E papieros jednorazowy Fumot Digital Monkey 40K 2%",
+                            "url": "https://www.dbucha.com/products/fumot-digital-monkey-40k-buchow",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/Fumot-Digital-Monkey-40k.png",
+                            "description": "Jednorazowka Fumot Digital Monkey 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "Fumot"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/fumot-leopard-40k-buchow#product",
+                            "name": "E papieros jednorazowy Fumot Leopard 40K 2%",
+                            "url": "https://www.dbucha.com/products/fumot-leopard-40k-buchow",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/Fumot-Leopard-40k-jednorazowki.png",
+                            "description": "Jednorazowka Fumot Leopard 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "Fumot"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/collections/ghost#product",
+                            "name": "E papieros jednorazowy Ghost Smart Vape 40K 2%",
+                            "url": "https://www.dbucha.com/collections/ghost",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/Ghost-Smart-Vape-40k-jednorazowki.png",
+                            "description": "Jednorazowka Ghost Smart Vape 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "Ghost"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 7,
+                        "item": {
+                            "@type": "Product",
+                            "@id": "https://www.dbucha.com/products/spaceman-sp40000-40k-buchow#product",
+                            "name": "E papieros jednorazowy SMOK Spaceman SP 40K 2%",
+                            "url": "https://www.dbucha.com/products/spaceman-sp40000-40k-buchow",
+                            "image": "https://xn--40k-buchw-d7a.pl/images/SMOK-Spacmeman-SP40000-40k-jednorazowki.png",
+                            "description": "Jednorazowka SMOK Spaceman SP 40K 2% prezentowana na stronie.",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "SMOK"
+                            },
+                            "category": "E papierosy jednorazowe"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
 
